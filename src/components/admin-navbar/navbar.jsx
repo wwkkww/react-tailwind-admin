@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { Context } from "../../context/index";
 import dinein from "../../dates/imgs/dinein.png";
 import walkin from "../../dates/imgs/walkin.png";
-import logo from "../../dates/imgs/logo.png";
+import logo from "../../dates/imgs/arta_logo.png";
+// import logo from "../../dates/imgs/logo.png";
 
 const Navbar = () => {
   let { state, dispatch } = useContext(Context);
@@ -15,8 +16,11 @@ const Navbar = () => {
   return (
     <div className="z-50 fixed left-0 right-0 top-0 h-[76px] px-6 py-4 bg-white border-b border-neutral-200 justify-between items-center gap-5 inline-flex">
       <div className="flex gap-6 items-center">
-        <div className="border-r pr-6 border-[#e4e4e4]">
-          <img src={logo} alt="logo" />
+        <div className="flex border-r pr-6 border-[#e4e4e4] ">
+          <img src={logo} alt="logo" style={{ width: 50}} className="inline self-center"/>
+          <div className="inline text-xl font-semibold  text-[#19191c] ml-4 self-center">
+            Arta
+          </div>
         </div>
         <div onClick={toggle} className="text-xl font-semibold leading-8 text-[#19191c]">Dashboard</div>
       </div>
