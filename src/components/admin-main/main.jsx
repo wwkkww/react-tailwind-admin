@@ -14,8 +14,9 @@ function Main() {
       <div>
         <Cards />
       </div>
-      <div className="flex gap-6 flex-wrap">
-        <div className=" p-6 w-full my-4 lg:w-[64%] bg-white rounded-xl">
+      {/* <div className="flex gap-6 flex-wrap"> */}
+      <div className="flex mb-6 gap-6 flex-wrap lg:flex-nowrap justify-between">
+        <div className=" p-6 w-full my-4 lg:w-[66.7%] bg-white rounded-xl">
           <div className="ext-zinc-900 text-base font-medium leading-normal mb-8">Selected location</div>
           <div className=" justify-start items-start gap-2 flex flex-wrap">
             {dateCards.map(({ text, earn, percent, color }) => {
